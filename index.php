@@ -49,9 +49,21 @@
                 Later on, we will introduce Kubernetes, and we will learn how orchestrating containers with kubernetes.
             </p>
         </div>
-        <div>
-          <?php echo 'test'; ?>
-        </div>
+        <?php
+            echo 'bonjouuur';
+            $servername = "127.0.0.1:32781";
+            $username = "root";
+            $password = "root";
+
+            // Create connection
+            $conn = mysqli_connect($servername, $username, $password);
+
+            // Check connection
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+            echo "Connected successfully";
+          ?>
         <div id="footer">
             <p>
                 Webpage made by <a href="/" target="_blank">Yehia TAHER (yehia.taher@gmail.com)</a>
