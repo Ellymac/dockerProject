@@ -49,14 +49,14 @@
                 Later on, we will introduce Kubernetes, and we will learn how orchestrating containers with kubernetes.
             </p>
         </div>
-        <?php
-            echo 'bonjouuur';
-            $servername = "127.0.0.1:3306";
+        <div>
+          <?php
+            $servername = "localhost";
             $username = "root";
             $password = "root";
 
             // Create connection
-            $conn = mysqli_connect($servername, $username, $password);
+            $conn = mysqli_connect($servername, $username, $password, "test");
 
             // Check connection
             if (!$conn) {
@@ -64,6 +64,7 @@
             }
             echo "Connected successfully";
           ?>
+        </div>
         <div id="footer">
             <p>
                 Webpage made by <a href="/" target="_blank">Yehia TAHER (yehia.taher@gmail.com)</a>
