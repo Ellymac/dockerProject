@@ -52,7 +52,7 @@
         <div>
           <?php
             echo 'bonjouuu';
-            $servername = "127.0.0.1:3306";
+            $servername = "172.18.0.2:3306";
             $username = "root";
             $password = "root";
 
