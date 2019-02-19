@@ -53,17 +53,19 @@
           <?php
             echo 'bonjouuu';
             $servername = "db";
-            $username = "root";
-            $password = "root";
+            $username = "username";
+            $password = "password";
 
-            // Create connection
-            $conn = mysqli_connect($servername, $username, $password, "test");
-
-            // Check connection
-            if (!$conn) {
-                die("Connection failed: " . mysqli_connect_error());
+            try {
+              $conn = new PDO("mysql:host=$servername;port=3306;dbname=test", $username, $password);
+              // set the PDO error mode to exception
+              $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+              echo "Connected successfully";
             }
-            echo "Connected successfully";
+            catch(PDOException $e)
+            {
+              echo "Connection failed: " . $e->getMessage();
+            }
           ?>
         </div>
         <div id="footer">
