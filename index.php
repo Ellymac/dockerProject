@@ -52,6 +52,8 @@
         <div>
           <?php
             echo 'bonjouuu';
+            phpinfo();
+            echo 'a+';
             $servername = "db";
             $username = "username";
             $password = "password";
