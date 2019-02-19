@@ -51,6 +51,7 @@
         </div>
         <div>
           <?php
+            echo 'bonjouuu';
             $servername = "localhost";
             $username = "root";
             $password = "root";
