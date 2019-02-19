@@ -52,7 +52,7 @@
         <div>
           <?php
             echo 'bonjouuu';
-            $servername = "localhost";
+            $servername = "127.0.0.1";
             $username = "root";
             $password = "root";
 
