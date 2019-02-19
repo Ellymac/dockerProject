@@ -51,7 +51,7 @@
         </div>
         <?php
             echo 'bonjouuur';
-            $servername = "127.0.0.1:5433";
+            $servername = "127.0.0.1:5432";
             $username = "root";
             $password = "root";
 
