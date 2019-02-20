@@ -52,7 +52,7 @@
         <div>
           <?php
             echo 'bonjouu';
-            $databaseHost = '127.0.0.1:3306';
+            $databaseHost = '172.18.0.2:3306';
             $databaseName = 'test';
             $databaseUsername = 'root';
             $databasePassword = 'root';
