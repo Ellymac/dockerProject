@@ -57,8 +57,8 @@
             $databaseUsername = 'root';
             $databasePassword = 'root';
             $a = 100;
-            while ($a <= 100) {
-              $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
+            while (true) {
+              $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
               // Check connection
               if (!$conn) {
                 $a--;
