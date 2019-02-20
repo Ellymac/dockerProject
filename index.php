@@ -58,7 +58,7 @@
             $databasePassword = 'root';
             $a = 100;
             while ($a <= 100) {
-              $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword);
+              $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
               // Check connection
               if (!$conn) {
                 $a--;
@@ -68,7 +68,7 @@
                 break;
               }
             }
-            
+
             echo "Connected successfully";
           ?>
         </div>
