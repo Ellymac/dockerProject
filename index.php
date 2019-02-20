@@ -52,12 +52,12 @@
         <div>
           <?php
             echo 'bonjouu';
-            $databaseHost = 'localhost';
+            $databaseHost = 'db';
 $databaseName = 'test';
 $databaseUsername = 'root';
 $databasePassword = 'root';
 
-$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
+$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
             // Check connection
             if (!$conn) {
