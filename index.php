@@ -52,17 +52,23 @@
         <div>
           <?php
             echo 'bonjouu';
-            $databaseHost = '127.0.0.1:8082';
+            $databaseHost = 'db';
             $databaseName = 'test';
             $databaseUsername = 'root';
             $databasePassword = 'root';
-
-            $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword);
-
-            // Check connection
-            if (!$conn) {
+            $a = 100;
+            while ($a <= 100) {
+              $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword);
+              // Check connection
+              if (!$conn) {
+                $a--;
+              }
+              if ($a==0) {
                 die("Connection failed: " . mysqli_connect_error());
+                break;
+              }
             }
+            
             echo "Connected successfully";
           ?>
         </div>
